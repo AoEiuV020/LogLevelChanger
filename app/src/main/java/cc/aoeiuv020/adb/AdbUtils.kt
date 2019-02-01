@@ -1,4 +1,4 @@
-package cc.aoeiuv020.loglevelchanger.adb
+package cc.aoeiuv020.adb
 
 import cc.aoeiuv020.encrypt.base64
 import com.cgutman.adblib.AdbBase64

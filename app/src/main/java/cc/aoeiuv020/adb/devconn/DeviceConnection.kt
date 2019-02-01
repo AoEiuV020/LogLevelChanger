@@ -1,6 +1,6 @@
-package cc.aoeiuv020.loglevelchanger.adb.devconn
+package cc.aoeiuv020.adb.devconn
 
-import cc.aoeiuv020.loglevelchanger.adb.AdbUtils
+import cc.aoeiuv020.adb.AdbUtils
 import com.cgutman.adblib.AdbConnection
 import com.cgutman.adblib.AdbCrypto
 import com.cgutman.adblib.AdbStream

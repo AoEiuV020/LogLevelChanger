@@ -2,10 +2,10 @@ package cc.aoeiuv020.loglevelchanger
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import cc.aoeiuv020.loglevelchanger.adb.AdbManager
-import cc.aoeiuv020.loglevelchanger.adb.devconn.DeviceConnection
-import cc.aoeiuv020.loglevelchanger.adb.devconn.DeviceConnectionAdapter
-import cc.aoeiuv020.loglevelchanger.adb.devconn.DeviceConnectionListener
+import cc.aoeiuv020.adb.AdbManager
+import cc.aoeiuv020.adb.devconn.DeviceConnection
+import cc.aoeiuv020.adb.devconn.DeviceConnectionAdapter
+import cc.aoeiuv020.adb.devconn.DeviceConnectionListener
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info

@@ -1,13 +1,13 @@
-package cc.aoeiuv020.loglevelchanger.adb
+package cc.aoeiuv020.adb
 
 import android.content.Context
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
+import cc.aoeiuv020.adb.devconn.DeviceConnection
+import cc.aoeiuv020.adb.devconn.DeviceConnectionListener
 import cc.aoeiuv020.anull.notNull
-import cc.aoeiuv020.loglevelchanger.adb.devconn.DeviceConnection
-import cc.aoeiuv020.loglevelchanger.adb.devconn.DeviceConnectionListener
 import com.cgutman.adblib.AdbCrypto
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.doAsync

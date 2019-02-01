@@ -1,4 +1,4 @@
-package cc.aoeiuv020.loglevelchanger.adb.devconn
+package cc.aoeiuv020.adb.devconn
 
 interface DeviceConnectionListener {
 

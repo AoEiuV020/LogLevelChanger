@@ -1,4 +1,4 @@
-package cc.aoeiuv020.loglevelchanger.adb.devconn
+package cc.aoeiuv020.adb.devconn
 
 /**
  * Created by AoEiuV020 on 2019.02.01-16:59:31.
