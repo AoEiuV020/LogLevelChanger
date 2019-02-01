@@ -3,6 +3,7 @@ package cc.aoeiuv020.loglevelchanger
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import cc.aoeiuv020.adb.AdbTestActivity
+import cc.aoeiuv020.log.level.LogLevelTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,10 @@ class MainActivity : AppCompatActivity() {
 
         btnAdbTest.setOnClickListener {
             AdbTestActivity.start(this)
+        }
+
+        btnLevelTest.setOnClickListener {
+            LogLevelTestActivity.start(this)
         }
     }
 }
