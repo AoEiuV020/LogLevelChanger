@@ -1,16 +1,16 @@
-package cc.aoeiuv020.loglevelchanger
+package cc.aoeiuv020.adb
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import cc.aoeiuv020.adb.AdbManager
 import cc.aoeiuv020.adb.devconn.DeviceConnection
 import cc.aoeiuv020.adb.devconn.DeviceConnectionAdapter
 import cc.aoeiuv020.adb.devconn.DeviceConnectionListener
-import kotlinx.android.synthetic.main.activity_main.*
+import cc.aoeiuv020.loglevelchanger.R
+import kotlinx.android.synthetic.main.activity_adb_test.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 
-class MainActivity : AppCompatActivity(), AnkoLogger {
+class AdbTestActivity : AppCompatActivity(), AnkoLogger {
     private val listener: DeviceConnectionListener = object : DeviceConnectionAdapter() {
         override fun notifyConnectionEstablished(devConn: DeviceConnection) {
             status("连接成功")
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_adb_test)
 
         AdbManager.init(this)
 
