@@ -1,5 +1,6 @@
 package cc.aoeiuv020.adb
 
+import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import cc.aoeiuv020.adb.devconn.DeviceConnection
@@ -9,8 +10,15 @@ import cc.aoeiuv020.loglevelchanger.R
 import kotlinx.android.synthetic.main.activity_adb_test.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
+import org.jetbrains.anko.startActivity
 
 class AdbTestActivity : AppCompatActivity(), AnkoLogger {
+    companion object {
+        fun start(ctx: Context) {
+            ctx.startActivity<AdbTestActivity>()
+        }
+    }
+
     private val listener: DeviceConnectionListener = object : DeviceConnectionAdapter() {
         override fun notifyConnectionEstablished(devConn: DeviceConnection) {
             status("连接成功")
